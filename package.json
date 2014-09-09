@@ -1,6 +1,6 @@
 {
   "name": "hexo-plugin-multilanguage",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This plugin adds multilanguage features to the Hexo (http://hexo.io) blog framework",
   "private": false,
   "license": "MIT",
