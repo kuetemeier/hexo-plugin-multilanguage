@@ -1,7 +1,7 @@
 {
   "name": "hexo-plugin-multilanguage",
-  "version": "0.0.1",
-  "description": "This plugin adds multilanguage features to the HEXO blog framework",
+  "version": "0.0.2",
+  "description": "This plugin adds multilanguage features to the Hexo (http://hexo.io) blog framework",
   "private": false,
   "license": "MIT",
   "homepage": "https://github.com/jkuetemeier/hexo-plugin-multilanguage",
@@ -25,7 +25,7 @@
     "lib"
   ],
   "keywords": [
-    "hexo"  ,
+    "hexo",
     "multilanguage"
   ],
   "devDependencies": {
