@@ -4,7 +4,6 @@
   "description": "This plugin adds multilanguage features to the HEXO blog framework",
   "private": false,
   "license": "MIT",
-  "repository": "https://github.com/jkuetemeier/hexo-plugin-multilanguage.git",
   "homepage": "https://github.com/jkuetemeier/hexo-plugin-multilanguage",
   "author": {
     "name": "Jörg Kütemeier",
@@ -15,5 +14,31 @@
     "url" : "http://github.com/jkuetemeier/hexo-plugin-multilanguage/issues"
   },
   "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkuetemeier/hexo-plugin-multilanguage"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "keywords": [
+    "hexo"  ,
+    "multilanguage"
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "grunt-mocha-cli": "^1.9.0",
+    "jshint-stylish": "^0.2.0",
+    "chai": "^1.9.1"
+  },
+  "scripts": {
+    "test": "grunt"
   }
 }
