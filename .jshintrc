@@ -12,8 +12,5 @@
   "eqnull": true,
   "node": true,
   "strict": true,
-  "expr": true,
-  "predef": [
-    "hexo"
-  ]
+  "expr": true
 }
