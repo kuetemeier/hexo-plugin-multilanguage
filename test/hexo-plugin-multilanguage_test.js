@@ -1,8 +1,9 @@
 /*global describe,it*/
 'use strict';
 
+var Hexo = require('hexo');
+global.hexo = new Hexo(__dirname, {silent: true});
 
-global.hexo = require('./fake-hexo.js');
 
 require('../index.js');
 
@@ -12,19 +13,13 @@ var expect = require('chai').expect,
 // jshint
 should.should.exists;
 
-if (typeof hexo !== 'undefined') {
-  console.log('loading fake-hexo module');
-}
-
-
-describe('fake-hexo', function() {
+describe('hexo', function() {
   it('should be functional', function() {
     should.exist(hexo);
-    hexo.extend.should.exists;
-    hexo.extend.helper.should.exists;
-    hexo.extend.helper.register.should.be.a.function;
-    hexo.extend.helper.list.should.be.a.function;
-    expect('hexo').to.exists;
+    should.exist(hexo.extend);
+    should.exist(hexo.extend.helper);
+    expect(hexo.extend.helper.register).to.be.an('function');
+    expect(hexo.extend.helper.list).to.be.an('function');
   });
 });
 
@@ -34,15 +29,15 @@ describe('hexo-plugin-multilanguage', function() {
 
   describe('should register helper', function() {
     it('register category_transform', function() {
-      should.exist(helper.list().category_transform);
-      should.exist(helper.list().tag_transform);
+      should.exist(helper.get('category_transform'));
+      should.exist(helper.get('tag_transform'));
     });
   });
 
   var no_transform = function(value) { return value; };
 
   describe('helper.category_transform', function() {
-    var ct = helper.list().category_transform;
+    var ct = helper.get('category_transform');
 
     it('prefixes category_', function() {
       var result = ct(no_transform)('test');
@@ -52,7 +47,7 @@ describe('hexo-plugin-multilanguage', function() {
   });
 
   describe('helper.tag_transform', function() {
-    var tt = helper.list().tag_transform;
+    var tt = helper.get('tag_transform');
 
     it('prefixes tag_', function() {
       var result = tt(no_transform)('test');

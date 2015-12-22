@@ -11,15 +11,13 @@
     "url": "https://jkuetemeier.com"
   },
   "bugs": {
-    "url" : "http://github.com/jkuetemeier/hexo-plugin-multilanguage/issues"
+    "url": "http://github.com/jkuetemeier/hexo-plugin-multilanguage/issues"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/jkuetemeier/hexo-plugin-multilanguage"
   },
-  "license": "MIT",
   "files": [
     "index.js",
     "lib"
@@ -29,14 +27,17 @@
     "multilanguage"
   ],
   "devDependencies": {
-    "grunt-contrib-jshint": "^0.10.0",
+    "chai": "^3.4.1",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^0.6.0",
-    "time-grunt": "^1.0.0",
-    "grunt-mocha-cli": "^1.9.0",
-    "jshint-stylish": "^0.4.0",
-    "chai": "^1.9.1"
+    "grunt-mocha-cli": "^2.0.0",
+    "hexo": "^3.1.1",
+    "jshint-stylish": "^2.1.0",
+    "load-grunt-tasks": "^3.4.0",
+    "time-grunt": "^1.0.0"
   },
   "scripts": {
     "test": "grunt"

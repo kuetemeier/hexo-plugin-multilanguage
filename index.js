@@ -6,4 +6,4 @@
  * Licensed under the MIT license.
  */
 
-require('./lib/helper');
+require('./lib/helper/multi-language');
