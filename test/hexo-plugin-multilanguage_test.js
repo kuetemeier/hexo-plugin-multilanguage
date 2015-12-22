@@ -1,8 +1,7 @@
 /*global describe,it*/
 'use strict';
 
-
-global.hexo = require('./fake-hexo.js');
+var hexo = require('./fake-hexo.js');
 
 require('../index.js');
 
