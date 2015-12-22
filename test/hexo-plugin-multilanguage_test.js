@@ -2,7 +2,7 @@
 'use strict';
 
 var Hexo = require('hexo');
-var hexo = new Hexo(__dirname, {silent: true});
+global.hexo = new Hexo(__dirname, {silent: true});
 
 
 require('../index.js');
@@ -16,11 +16,10 @@ should.should.exists;
 describe('hexo', function() {
   it('should be functional', function() {
     should.exist(hexo);
-    hexo.extend.should.exists;
-    hexo.extend.helper.should.exists;
-    hexo.extend.helper.register.should.be.a.function;
-    hexo.extend.helper.list.should.be.a.function;
-    expect('hexo').to.exists;
+    should.exist(hexo.extend);
+    should.exist(hexo.extend.helper);
+    expect(hexo.extend.helper.register).to.be.an('function');
+    expect(hexo.extend.helper.list).to.be.an('function');
   });
 });
 
