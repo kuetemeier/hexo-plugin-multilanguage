@@ -1,4 +1,4 @@
-hexo-plugin-multilanguage
+DISCONTINUED - hexo-plugin-multilanguage
 =========================
 
 [![Build Status](https://travis-ci.org/jkuetemeier/hexo-plugin-multilanguage.svg?branch=master)](https://travis-ci.org/jkuetemeier/hexo-plugin-multilanguage)
